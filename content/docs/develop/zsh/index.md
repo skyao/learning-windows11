@@ -7,6 +7,7 @@ description: >
   安装配置zsh和ohmyzsh!
 ---
 
+> 备注：先确保已经安装配置好 git 和 gitbash。
 
 ##  安装配置 zsh
 
