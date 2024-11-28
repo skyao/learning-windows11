@@ -1,7 +1,7 @@
 ---
 title: "安装配置VS Code"
 linkTitle: "VS Code"
-weight: 30
+weight: 60
 date: 2021-08-26
 description: >
   安装VS Code
