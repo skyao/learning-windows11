@@ -199,7 +199,14 @@ vi ~/.zshrc
 增加以下内容：
 
 ```bash
-# proxy
-alias proxyon='export all_proxy=socks5://192.168.2.1:7891;export http_proxy=http://192.168.2.1:7890;export https_proxy=http://192.168.2.1:7890;export no_proxy=127.0.0.1,localhost,local,.local,.lan,192.168.0.0/16,10.0.0.0/16'
+# set proxy for different locations
+alias proxyon-nansha='export all_proxy=socks5://192.168.0.1:7891;export http_proxy=http://192.168.0.1:7890;export https_proxy=http://192.168.0.1:7890;export no_proxy=127.0.0.1,localhost,local,.local,.lan,192.168.0.0/16,10.0.0.0/16'
+alias proxyon-tianhe='export all_proxy=socks5://192.168.2.1:7891;export http_proxy=http://192.168.2.1:7890;export https_proxy=http://192.168.2.1:7890;export no_proxy=127.0.0.1,localhost,local,.local,.lan,192.168.0.0/16,10.0.0.0/16'
+alias proxyon-fenghu='export all_proxy=socks5://192.168.3.1:7891;export http_proxy=http://192.168.3.1:7890;export https_proxy=http://192.168.3.1:7890;export no_proxy=127.0.0.1,localhost,local,.local,.lan,192.168.0.0/16,10.0.0.0/16'
+alias proxyon-local='export all_proxy=socks5://127.0.0.1:7897;export http_proxy=http://127.0.0.1:7897;export https_proxy=http://127.0.0.1:7897;export no_proxy=127.0.0.1,localhost,local,.local,.lan,192.168.0.0/16,10.0.0.0/16'
+# set default proxy by this line
+alias proxyon='proxyon-local'
 alias proxyoff='unset all_proxy http_proxy https_proxy no_proxy'
+# uncomment next line to enable proxy by default when zsh is opened
+# proxyon
 ```
