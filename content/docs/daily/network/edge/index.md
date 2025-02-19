@@ -48,7 +48,9 @@ windows 11 自带微软Edge浏览器，无需安装，但是需要稍微设置�
 
 ### SwitchOmega
 
-设置proxy为 socket5, 代理服务器为 192.168.2.1, 代理端口为 7891。
+思路：增加 auto switch 场景，指向虚拟场景 fanqiang，再根据实际需要增加具体的 proxy，然后以后就只要修改虚拟场景 fanqiang 的指向就好了。
+
+设置 proxy 为 socket5, 代理服务器为 192.168.2.1, 代理端口为 7891。
 
 不经过的地址列表为:
 
@@ -59,6 +61,10 @@ localhost
 192.168.0.0/16
 ```
 
+增加 auto switch，设置规则格式为 AutoProxy ，规则列表网址为：
+
+https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
+
 ### save to pocket
 
 登录即可。
@@ -67,4 +73,4 @@ localhost
 
 无需操作。
 
-### 
+
