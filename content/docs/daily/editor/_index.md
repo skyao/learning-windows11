@@ -1,6 +1,6 @@
 ---
-title: "文档阅读和编辑器软件"
-linkTitle: "编辑器软件"
+title: "编辑器软件"
+linkTitle: "编辑器"
 weight: 30
 date: 2021-08-26
 description: >
