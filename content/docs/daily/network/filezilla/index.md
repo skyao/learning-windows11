@@ -25,6 +25,10 @@ https://filezilla-project.org/
 
 正常安装，用 crack 文件覆盖 FileZilla.exe 就可以破解。
 
+配置一下文件大小显示，默认是 byte，数字太大数不过来。
+
+打开 "编辑" -> "设置" -> "界面" -> "文件大小格式"，从默认第一个的 "以字节为单位显示"，修改为第三个 "使用SI式二进制前缀"，取消 "使用千位分隔符" 的勾选。
+
 ## FileZilla Server
 
 ### 安装
@@ -70,3 +74,18 @@ FileZilla Server 启动后，用 FileZilla Client 在本机可以正常连接和
   ![](images/set-custom-port-range.png)
 
 这样就可以从其他机器访问到 FileZilla Server。
+
+### 容许公网访问
+
+必要时，打开路由器的端口映射，可以容许从外网访问内部 ftp 服务器。
+
+需要映射的端口有：
+
+- 20-21
+- 50100-51100
+
+openwrt 中的配置如下：
+
+![](images/port-mapping.png)
+
+注意：这样把内部 ftp 服务器暴露给公网非常不安全，因此只能临时要用的时候开启一下，用完就关闭（把后面的勾选去掉即可）。
