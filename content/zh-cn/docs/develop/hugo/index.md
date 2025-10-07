@@ -11,7 +11,7 @@ description: >
 
 ## 安装 hugo
 
-参考： https://skyao.io/learning-hugo/docs/installation/windows/
+参考： https://skyao.net/learning-hugo/docs/installation/windows/
 
 备注：
 
@@ -19,7 +19,7 @@ description: >
 
 ## 配置 hugo
 
-参考： https://skyao.io/learning-hugo/docs/installation/postinstall/
+参考： https://skyao.net/learning-hugo/docs/installation/postinstall/
 
 
 

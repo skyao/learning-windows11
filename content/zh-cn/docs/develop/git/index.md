@@ -9,6 +9,6 @@ description: >
 
 参考：
 
-- https://skyao.io/learning-git/docs/installation/windows/
+- https://skyao.net/learning-git/docs/installation/windows/
 
 注意要配置好 git 的代理，否则容易被墙。

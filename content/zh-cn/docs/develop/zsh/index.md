@@ -65,38 +65,6 @@ Quit and do nothing.  The function will be run again next time.
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-在这里下载并安装几个字体
-
-https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k
-
-- MesloLGS NF Regular.ttf
-- MesloLGS NF Bold.ttf
-- MesloLGS NF Italic.ttf
-- MesloLGS NF Bold Italic.ttf
-
-下载安装 Powerlevel10k 主题：
-
-```bash
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-```
-
-修改
-
-```bash
-vi ~/.zshrc
-```
-
-增加内容:
-
-```bash
-ZSH_THEME="powerlevel10k/powerlevel10k"
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(history)
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
-
-# User configuration
-export LS_COLORS="rs=0:no=00:mi=00:mh=00:ln=01;36:or=01;31:di=01;34:ow=04;01;34:st=34:tw=04;34:pi=01;33:so=01;33:do=01;33:bd=01;33:cd=01;33:su=01;35:sg=01;35:ca=01;35:ex=01;32:"
-```
-
 安装 wd 插件：
 
 ```bash
@@ -203,6 +171,7 @@ vi ~/.zshrc
 alias proxyon-nansha='export all_proxy=socks5://192.168.0.1:7891;export http_proxy=http://192.168.0.1:7890;export https_proxy=http://192.168.0.1:7890;export no_proxy=127.0.0.1,localhost,local,.local,.lan,192.168.0.0/16,10.0.0.0/16'
 alias proxyon-tianhe='export all_proxy=socks5://192.168.2.1:7891;export http_proxy=http://192.168.2.1:7890;export https_proxy=http://192.168.2.1:7890;export no_proxy=127.0.0.1,localhost,local,.local,.lan,192.168.0.0/16,10.0.0.0/16'
 alias proxyon-fenghu='export all_proxy=socks5://192.168.3.1:7891;export http_proxy=http://192.168.3.1:7890;export https_proxy=http://192.168.3.1:7890;export no_proxy=127.0.0.1,localhost,local,.local,.lan,192.168.0.0/16,10.0.0.0/16'
+alias proxyon-qingpu='export all_proxy=socks5://192.168.5.1:7891;export http_proxy=http://192.168.5.1:7890;export https_proxy=http://192.168.5.1:7890;export no_proxy=127.0.0.1,localhost,local,.local,.lan,192.168.0.0/16,10.0.0.0/16'
 alias proxyon-local='export all_proxy=socks5://127.0.0.1:7897;export http_proxy=http://127.0.0.1:7897;export https_proxy=http://127.0.0.1:7897;export no_proxy=127.0.0.1,localhost,local,.local,.lan,192.168.0.0/16,10.0.0.0/16'
 # set default proxy by this line
 alias proxyon='proxyon-local'
