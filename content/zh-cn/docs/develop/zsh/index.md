@@ -41,6 +41,9 @@ zsh 5.9 (x86_64-pc-msys)
 ```bash
 /c/Windows/System32/chcp.com 65001 > /dev/null 2>&1
 
+# 方便起见，直接切换到目标目录，这样 zsh 打开之后当前路径就是这里
+cd /d/sky
+
 if [ -t 1 ]; then
   exec zsh
 fi
