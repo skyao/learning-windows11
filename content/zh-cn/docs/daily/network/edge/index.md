@@ -65,12 +65,14 @@ localhost
 
 https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
 
-### save to pocket
 
-登录即可。
+## 离线安装
 
-### 沉浸式翻译
+偶尔会遇到需要离线安装的情况，比如某司的电脑在线升级速度超慢。
 
-无需操作。
+离线安装包可以从下面的地址下载：
+
+https://www.microsoft.com/zh-cn/edge/business/download
+
 
 
